@@ -1,0 +1,82 @@
+/* =========================================
+   HTML + BODY
+========================================= */
+
+html,
+body {
+  margin: 0;
+
+  padding: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #dfe3ea;
+}
+
+/* =========================================
+   APP
+========================================= */
+
+.app {
+  width: 100%;
+
+  height: 100dvh;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.background {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-image: url("img/M.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+/* =========================================
+   MÁY TÍNH
+========================================= */
+
+@media (min-width: 768px) {
+  .app {
+    width: 430px;
+
+    height: 100dvh;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+  }
+}

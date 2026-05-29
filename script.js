@@ -1,0 +1,5 @@
+let envelope = document.querySelector(".envelope");
+
+envelope.addEventListener("click", function () {
+  envelope.classList.toggle("open");
+});
