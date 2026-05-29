@@ -58,7 +58,7 @@ body {
 
   background-image: url("./M.png");
 
-  background-size: cover;
+background-size: contain;
 
   background-position: center;
 
