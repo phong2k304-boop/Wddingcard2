@@ -58,7 +58,7 @@ body {
 
   background-image: url("./M.png");
 
-background-size: contain;
+  background-size: contain;
 
   background-position: center;
 
@@ -69,7 +69,7 @@ background-size: contain;
    MÁY TÍNH
 ========================================= */
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .app {
     width: 430px;
 
