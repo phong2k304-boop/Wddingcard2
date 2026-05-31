@@ -1,66 +1,13 @@
-/* =========================================
-   HTML + BODY
-========================================= */
-
 body {
   margin: 0;
-
   width: 100%;
-
   height: 100%;
-
-  overflow: hidden;
-
-  background: #dfe3ea;
+  background: red;
 }
-
-/* =========================================
-   BODY
-========================================= */
-
-/* =========================================
-   APP
-========================================= */
-
 .app {
-  width: 100%;
-
-  height: 100%;
-}
-
-/* =========================================
-   BACKGROUND
-========================================= */
-
-.background {
   position: fixed;
-
   width: 100%;
-
   height: 100%;
-
-  background-image: url("./M.png");
-
+  background-image: url(./M.png);
   background-size: 100% 100%;
-
-  z-index: 0;
-}
-
-/* =========================================
-   GIỚI HẠN CHIỀU NGANG TRÊN PC
-========================================= */
-
-@media (min-width: 768px) {
-  .app {
-    width: 430px;
-
-    height: 100%;
-  }
-  .background {
-    width: 430px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-  }
 }
