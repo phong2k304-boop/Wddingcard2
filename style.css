@@ -1,13 +1,144 @@
+/* =========================================
+   HTML + BODY
+========================================= */
+
 body {
   margin: 0;
+
   width: 100%;
+
   height: 100%;
-  background: red;
+
+  overflow: hidden;
+
+  background: #dfe3ea;
 }
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+/* =========================================
+   APP
+========================================= */
+
 .app {
+  width: 100%;
+
+  height: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.background {
   position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-image: url("./M.png");
+
+  background-size: 100% 100%;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  z-index: 0;
+}
+
+/* =========================================
+   GIỚI HẠN CHIỀU NGANG TRÊN PC
+========================================= */
+
+@media (min-width: 768px) {
+  .app {
+    width: 430px;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .background {
+    width: 430px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}
+.phongbi {
+  scale: 0.5;
+  position: relative;
+  top: 40px;
+  width: 100vw;
+  max-width: 430px;
+
+  aspect-ratio: 1.4 / 1;
+}
+
+.lap,
+.thantren,
+.thanduoi,
+.haiben {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
-  background-image: url(./M.png);
-  background-size: 100% 100%;
+}
+
+.lap img,
+.thantren img,
+.thanduoi img,
+.haiben img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+.thanduoi {
+  z-index: 1;
+}
+
+.haiben {
+  z-index: 2;
+}
+
+.thantren {
+  z-index: 2;
+}
+
+.lap {
+  z-index: 4;
 }
